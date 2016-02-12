@@ -1,0 +1,49 @@
+<div>
+<form>
+	<div
+			ng-show="hasError"
+			class="ng-hide"
+			ng-include="'errorfragment/errorfragment.html'"></div>
+	<h3 style="padding-left: 15px;">Add Details</h3>
+	<div
+					class="form-group"
+					style="margin-top: 7px;">
+					<label class="col-md-2 oods-label control-label">Name:</label>
+					<div class="col-md-8">
+						<input
+							class="form-control"
+							id="in_feeddesc"
+							type="text"
+							ng-model="form.personName"
+							value="{{form.personName}}"
+							ng-maxlength="10"></input>
+					</div>
+	</div>
+	<div
+					class="form-group"
+					style="margin-top: 7px;">
+					<label class="col-md-2 oods-label control-label">States(s):</label>
+					<div class="col-md-8 select-wrapper">
+						<select
+							class="oods-select"
+							ng-model="states"
+							ng-options="states for states in form.statesList"></select>
+					</div>
+		</div>
+		<div class="form-inline navbar-form navbar-right">
+					<button
+						class="btn btn-default"
+						type="submit"
+						ng-disabled="isSaveEnabled()"
+						ng-click="save(form)"
+						style="margin-right: 7px; padding-top: -20px; text-align: center;">Save</button>
+					<div
+						class="alert alert-success col-md-8"
+						ng-show="saved == 'Y' && addError == ''"
+						style="margin-left: 15px;">Details for {{form.personName}} successfully saved!</div>
+					
+		</div>
+		
+</form>
+
+</div>
