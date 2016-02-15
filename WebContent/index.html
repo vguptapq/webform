@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="webapp">
+<html ng-app="webApp">
 <head>
   <meta charset="utf-8">
 
@@ -7,16 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="css/webform.css"/>
   <link rel="stylesheet" type="text/css" title="blue" href="css/uxf-1.0.0-blue.min.css">
-  <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-  <script src="src/webform_controller/webform.js"></script>
-  <script src="src/webform_controller/main_ctrl.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <!-- Angular -->
+<script src="js_libs/angular/angular.js"></script>
+<script src="js_libs/angular/angular-resource.js"></script>
+<script src="js_libs/angular/angular-route.js"></script>
+<script src="js_libs/angular/angular-mocks.js"></script>
+  
   <!-- jQuery -->
 <script src="js_libs/jquery/jquery-1.11.1.js"></script>
 <script src="js_libs/ux/uxf-1.0.0.min.js"></script>
-  <!-- Module -->
+<!-- Underscore -->
+<script src="js_libs/underscore/underscore.js"></script>
 
+<!-- Restangular -->
+<script src="js_libs/restangular/restangular.js"></script>
+
+<!-- Load bar -->
+<script src="js_libs/restangular/loading-bar.js"></script>
+  <!-- Module -->
+  
+  <!-- Bootstrap tips -->
+<script src="js_libs/bootstrap/ui-bootstrap-tpls-0.13.0.js"></script>
+<script src="js_libs/bootstrap/bootstrap-editable.min.js"></script>
+
+
+<script src="src/main_ctrl.js"></script>
+<script src="src/MainController.js"></script>
+  
 </head>
 <body ng-controller="MainCtrl">
+<div class="container" style="padding-left: 0; padding-right: 0;">
+	<div ng-view></div>
+</div>
 
 </body>
 </html>
