@@ -2,8 +2,8 @@ package org.webform.restwebservice.utils;
 
 import javax.ws.rs.core.Response;
 
-import com.ode.restwebservice.constants.FormConstants;
-import com.ode.restwebservice.enums.FormEnums;
+import org.webform.restwebservice.constants.FormConstants;
+import org.webform.restwebservice.enums.FormEnums;
 
 public class ProcessJsonResponseData {
 	

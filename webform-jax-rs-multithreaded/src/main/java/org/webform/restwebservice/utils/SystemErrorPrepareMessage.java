@@ -1,8 +1,8 @@
 package org.webform.restwebservice.utils;
 
-import com.ode.restwebservice.beans.ErrorMessage;
-import com.ode.restwebservice.constants.FormConstants;
-import com.ode.restwebservice.enums.FormEnums;
+import org.webform.restwebservice.beans.ErrorMessage;
+import org.webform.restwebservice.constants.FormConstants;
+import org.webform.restwebservice.enums.FormEnums;
 
 public class SystemErrorPrepareMessage {
 	
